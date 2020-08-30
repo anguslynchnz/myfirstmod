@@ -9,14 +9,15 @@ import net.minecraft.util.registry.Registry;
 
 public class ModMain implements ModInitializer {
 
-    public static final Maracca FABRIC_ITEM = new Maracca(new Item.Settings().group(ItemGroup.MISC).maxCount(5));
+    public static final Maracca Maracca_Item = new Maracca(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
 
     @Override
     public void onInitialize() {
-        // TODO Auto-generated method stub
         System.out.println("Mod Initilised");
 
-        Registry.register(Registry.ITEM, new Identifier("tutorial", "fabric_item"), FABRIC_ITEM);
+        Registry.register(Registry.ITEM, new Identifier("myfirstmod", "maracca"), Maracca_Item);
+
+        Registry.register(Registry.SOUND_EVENT, Maracca.MARACCA_SOUND, Maracca.MARACCA_SOUND_EVENT);
 
     }
     
