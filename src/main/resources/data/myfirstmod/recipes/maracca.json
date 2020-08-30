@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      " W ",
+      "WSW",
+      "HW "
+    ],
+    "key": {
+      "W": {
+        "tag": "minecraft:wooden_slabs"
+      },
+      "S": {
+        "item": "minecraft:wheat_seeds"
+      },
+      "H": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "myfirstmod:maracca"
+    }
+  }
