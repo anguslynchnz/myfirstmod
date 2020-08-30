@@ -9,7 +9,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ModMain implements ModInitializer {
 
-    public static final Item FABRIC_ITEM = new Item(new Item.Settings().group(ItemGroup.MISC));
+    public static final Maracca FABRIC_ITEM = new Maracca(new Item.Settings().group(ItemGroup.MISC).maxCount(5));
 
     @Override
     public void onInitialize() {
